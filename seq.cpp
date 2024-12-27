@@ -366,6 +366,7 @@ SolverStats solve_poisson(double a1, double a2, double b1, double b2,
     
     stats.solve_time = static_cast<double>(clock() - solve_start) / CLOCKS_PER_SEC;
     
+    // 储存数值解到文件中
     // if (!output_file.empty()) {
     //     ofstream fout(output_file.c_str());
     //     if (!fout) {
